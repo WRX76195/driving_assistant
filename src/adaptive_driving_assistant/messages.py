@@ -61,8 +61,6 @@ def _empty_scene_message(
     priority: PriorityResult,
     mode: CommunicationMode,
 ) -> str:
-    # W potoku 0.3.5 pusta lista detekcji ma priorytet „brak komunikatu”.
-    # Szablon samego wskaźnika zostaje dla formalnego iloczynu generatora.
     if priority.level != PriorityLevel.NO_MESSAGE:
         return _readability_message(scene_readability, mode)
     base = "Nie wykryto obiektów z obsługiwanych klas."
