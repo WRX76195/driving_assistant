@@ -63,8 +63,7 @@ rozmiar przesyłanego pliku do 20 MB.
 - Detekcja: lokalny adapter Ultralytics YOLO dla klas `person`, `car`, `bus`,
   `truck`, `bicycle`, `motorcycle`.
 - Heurystyczny wskaźnik cech obrazu: jasność, kontrast, ostrość, nasycenie,
-  gęstość krawędzi i udział kanałów nasyconych do 255. Od 0.3.6 kalibracja
-  przechodzi test 7.4.5 (skrajne rozmycie i prześwietlenie → poziom ograniczony).
+  gęstość krawędzi i udział kanałów nasyconych do 255.
   Wynik trafia do raportu i może pojawić się w trybie rozszerzonym; **nie zmienia
   priorytetu komunikatu**.
 - Priorytet komunikatu: jawne reguły wyboru głównej detekcji i kolejności
@@ -95,11 +94,9 @@ ruff check .
 Testy sprawdzają logikę implementacji, w tym wyczerpujące wyliczenie języka
 komunikatów. Nie są to metryki skuteczności modelu ani ocena odbioru u ludzi.
 
-Opcjonalne pomiary z Tabeli 8.4 pracy (ablacja `imgsz` i bootstrap obrazowy)
-nie wchodzą do PE1. Skrypty leżą w katalogu głównym projektu:
+Skrypty leżą w katalogu głównym projektu:
 `ablacja_imgsz_bdd.py` oraz `bootstrap_obrazowy_bdd.py`. Mini zbiór w
-`data/samples` ma sześć plików z pkt 7.4; archiwum zawiera dodatkowo
-`zidane.jpg` (Ultralytics).
+`data/samples` ma sześć plików;
 
 ## Zweryfikowane środowisko
 
