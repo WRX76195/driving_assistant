@@ -5,18 +5,18 @@
 Zmiany zachowania względem 0.3.5:
 
 - nowy wzór S (wagi 0,15 / 0,45 / 0,28 / 0,12, skala ostrości 0,02, kara
-  `clip_hi`); test 7.4.5 na `bus.jpg` przechodzi;
+  `clip_hi`); test na `bus.jpg` przechodzi;
 - priorytet nadal **nie** używa wskaźnika;
 - skrypty: ranking AP i trzy polityki priorytetu — wykonane na 2000 parach
   (zbiór PE1). Oficjalny val 10 000 poza zakresem.
 - w archiwum: opcjonalny `zidane.jpg` oraz skrypty `ablacja_imgsz_bdd.py` i
-  `bootstrap_obrazowy_bdd.py` (Tabela 8.4; pomiarów nie wykonano).
+  `bootstrap_obrazowy_bdd.py`.
 
 Kontrole automatyczne 0.3.6: `pytest` (68 passed) oraz `ruff check .`.
 Tabela 7.7b: `docs/scene_readability_table_7_7_0.3.6.json`.
 Batch mini zbioru: `data/samples/batch_results_0.3.6.json`.
 
-## Wersja 0.3.5 (korekta po recenzji)
+## Wersja 0.3.5
 
 Zmiany zachowania względem 0.3.4:
 
@@ -66,7 +66,7 @@ Model: `yolo11n.pt`, SHA-256
 | Artefakty | oznaczony obraz i ścisły raport JSON w `data/output/<znacznik>/` |
 
 Wynik sprawdza integrację komponentów. Osobna ewaluacja precyzji / kompletności / F1
-względem etykiet BDD100K jest opisana w punkcie 7.7 pracy i w pliku
+względem etykiet BDD100K jest opisana  pracy i w pliku
 `docs/bdd_eval_metrics_thresholds_0.3.4.json`. Nie jest miarą bezpieczeństwa
 jazdy ani trafności wskaźnika cech obrazu.
 
