@@ -12,18 +12,14 @@ from PIL import Image, ImageDraw, ImageFilter
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SAMPLES_DIR = PROJECT_ROOT / "data" / "samples"
 
-# Obrazy pobierane jednorazowo z sieci (przygotowanie zbioru, nie runtime aplikacji).
 REMOTE_SAMPLES = {
     "bus.jpg": "https://raw.githubusercontent.com/ultralytics/assets/main/im/bus.jpg",
 }
 
-# Poza mini zbiorem z pkt 7.4: archiwum zawiera ten plik; skrypt dopisuje go
-# do manifestu, jeżeli jest obecny (albo pobiera, gdy brakuje).
 OPTIONAL_REMOTE_SAMPLES = {
     "zidane.jpg": "https://raw.githubusercontent.com/ultralytics/yolov5/master/data/images/zidane.jpg",
 }
 
-# Obrazy lokalne wymagane w archiwum projektu (nie są pobierane).
 LOCAL_SAMPLES = {
     "street.jpg": (
         "Syntetyczna scena uliczna wygenerowana na potrzeby projektu za pomocą narzędzia generowania obrazów OpenAI (2026-08-16).",
