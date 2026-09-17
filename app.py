@@ -63,9 +63,9 @@ def main() -> None:
     st.set_page_config(page_title=APP_NAME, layout="wide")
     st.title(APP_NAME)
     st.info(
-        "Lokalny demonstrator offline warstwy komunikatów. Nie jest prototypem ADAS. "
+        "Lokalny demonstrator offline warstwy komunikatów. "
         "Aplikacja analizuje tylko pojedynczy obraz przesłany przez użytkownika, "
-        "nie steruje pojazdem i nie ocenia ryzyka kolizji."
+        "nie steruje pojazdem i nie ocenia ryzyka kolizji"
     )
 
     config = _sidebar_config()
@@ -268,7 +268,6 @@ def _remove_current_artifacts() -> None:
         if path.is_file() and path.is_relative_to(data_root):
             path.unlink()
             parent = path.parent
-            # Usuwaj wyłącznie puste podkatalogi wyników, nie data/input.
             if (
                 parent != data_root
                 and parent.is_relative_to(OUTPUT_DIR.resolve())
