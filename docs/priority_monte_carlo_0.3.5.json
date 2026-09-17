@@ -2,7 +2,7 @@
   "seed": 20260829,
   "n_scenes": 20000,
   "n_pairs": 200000,
-  "note": "Wskaźnik cech obrazu jest losowany, ale od 0.3.5 nie wchodzi do punktacji assess_priority.",
+  "note": "Wskaźnik cech obrazu jest losowany",
   "gt": {
     "n_with_detections": 19220,
     "not_largest_nor_central_pct": 9.708636836628513,
