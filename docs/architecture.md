@@ -39,5 +39,4 @@ sprawdza jego obecność przed analizą i nie pobiera wag automatycznie.
    bieżącej analizy.
 
 Wskaźnik opisuje wybrane cechy techniczne pliku. Nie mierzy czytelności sceny
-dla człowieka, widzialności drogowej ani bezpieczeństwa jazdy. Od 0.3.6
-kalibracja przechodzi test 7.4.5; wynik nadal nie wchodzi do priorytetu.
+dla człowieka, widzialności drogowej ani bezpieczeństwa jazdy.
