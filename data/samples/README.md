@@ -5,7 +5,7 @@ technicznej prototypu w wersji 0.3.6. Nie służy ocenie jakości modelu YOLO �
 umożliwia sprawdzenie, czy pipeline, heurystyka i raport JSON działają
 poprawnie na znanych wejściach.
 
-## Skład mini zbioru (opisany w pracy §3.8 / §7.4)
+## Skład mini zbioru 
 
 | Plik | Źródło | Przeznaczenie |
 | --- | --- | --- |
@@ -15,10 +15,6 @@ poprawnie na znanych wejściach.
 | `bright.png` | syntetyczny | Wysoka jasność — test heurystycznego wskaźnika cech obrazu |
 | `blur.png` | syntetyczny | Rozmycie — test heurystyki ostrości |
 | `empty_scene.png` | syntetyczny | Brak obiektów — test komunikatu bez detekcji |
-
-Poza mini zbiorem archiwum zawiera opcjonalny `zidane.jpg` (Ultralytics).
-Nie wchodzi do przebiegów §7.4 ani do `analyze_samples.py`. Skrypt
-`prepare_samples.py` dopisuje go do `manifest.json`, jeśli plik jest obecny.
 
 Metadane (sumy SHA-256, opisy) znajdują się w `manifest.json`. Szczegółowe
 pochodzenie syntetycznego pliku `street.jpg`, data utworzenia i użyty opis
