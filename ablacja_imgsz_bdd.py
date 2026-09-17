@@ -1,8 +1,5 @@
 """Opcjonalna ablacja rozdzielczości wejściowej na rozpakowanym archiwum 2000 par.
 
-Pomiaru nie wykonano w zakresie PE1. Skrypt jest w archiwum, żeby dało się
-odtworzyć polecenie z Tabeli 8.4 pracy:
-
     python ablacja_imgsz_bdd.py --pairs-dir <katalog_2000_par> --imgsz 640 960 1280 --output ablacja_imgsz.json
 """
 
@@ -55,7 +52,7 @@ def _parser() -> argparse.ArgumentParser:
         "--confidence",
         type=float,
         default=ANALYSIS_THRESHOLD,
-        help="Próg analizy (Tabela 7.12 / aplikacja). Pułap kompletności liczony dodatkowo przy 0,05.",
+        help="Próg analizy. Pułap kompletności liczony dodatkowo przy 0,05.",
     )
     return parser
 
@@ -165,7 +162,7 @@ def main() -> int:
         "app_version": APP_VERSION,
         "created_at_utc": datetime.now(UTC).isoformat(),
         "note": (
-            "Opcjonalna ablacja z Tabeli 8.4. Nie wchodzi do wyników PE1, dopóki "
+            "Opcjonalna ablacja. Nie wchodzi do wyników PE1, dopóki "
             "pomiar nie zostanie wykonany i zapisany."
         ),
         "pairs_dir": str(args.pairs_dir),
