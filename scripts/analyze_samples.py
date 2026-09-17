@@ -1,7 +1,5 @@
 """Uruchamia potok na mini zbiorze data/samples i zapisuje podsumowanie."""
 
-# ruff: noqa: E402
-
 from __future__ import annotations
 
 import json
@@ -33,7 +31,6 @@ from adaptive_driving_assistant.pipeline import (
 SAMPLES_DIR = PROJECT_ROOT / "data" / "samples"
 OUTPUT_JSON = SAMPLES_DIR / "batch_results_0.3.6.json"
 
-# Mini zbiór opisany w pracy (§3.8 / §7.4) — bez obrazów opcjonalnych.
 THESIS_MINI_SET = (
     "bus.jpg",
     "street.jpg",
