@@ -191,8 +191,7 @@ def main() -> None:
         "n_scenes": N_SCENES,
         "n_pairs": N_PAIRS,
         "note": (
-            "Wskaźnik cech obrazu jest losowany, ale od 0.3.5 nie wchodzi do "
-            "punktacji assess_priority."
+            "Wskaźnik cech obrazu jest losowany"
         ),
         "gt": _evaluate_scenes(CLASS_SHARES_GT, SEED),
         "det": _evaluate_scenes(CLASS_SHARES_DET, SEED + 17),
