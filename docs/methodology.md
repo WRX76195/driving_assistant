@@ -2,7 +2,7 @@
 
 Testy techniczne sprawdzają poprawność implementacji. Osobna ewaluacja
 detektora na oznaczonym podzbiorze BDD100K (precision / recall / F1 oraz
-interpolowane AP) jest opisana w punkcie 7.7 pracy. Siatka 19 progów z
+interpolowane AP) jest opisana w pracy. Siatka 19 progów z
 przebiegu 0.3.4: `docs/bdd_eval_metrics_thresholds_0.3.4.json`. Przebieg
 0.3.6 (ta sama siatka odtworzona + AP z pełnego rankingu ufności):
 `docs/bdd_eval_metrics_0.3.6.json`.
@@ -32,7 +32,7 @@ przebiegu 0.3.4: `docs/bdd_eval_metrics_thresholds_0.3.4.json`. Przebieg
 - obliczenia IoU, dopasowanie ramek 1:1 i obsługa wieloprogowej ewaluacji BDD.
 
 Precision, recall i F1-score podaje się wyłącznie dla ewaluacji na oznaczonym
-zbiorze (protokół BDD100K w §7.7) — nie jako wynik testów jednostkowych ani
+zbiorze — nie jako wynik testów jednostkowych ani
 kontroli na `data/samples`.
 
 ## Poziomy walidacji
