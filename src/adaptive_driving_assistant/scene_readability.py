@@ -6,11 +6,9 @@ dobry, umiarkowany lub ograniczony. Wynik opisuje cechy pliku, nie czytelność
 sceny dla człowieka, warunki drogowe ani widzialność meteorologiczną.
 Nazwa modułu pozostaje historyczna.
 
-Od wersji 0.3.6 stałe normalizacyjne i wagi dobrano tak, by test 7.4.5
+Od wersji 0.3.6 stałe normalizacyjne i wagi dobrano tak, by test
 przechodził na bus.jpg: skrajne rozmycie (σ = 30) i prześwietlenie (×3,0)
-dają kategorię „ograniczony”. Priorytet komunikatu nadal nie używa tego
-wyniku (od 0.3.5).
-"""
+dają kategorię „ograniczony”."""
 
 from __future__ import annotations
 
