@@ -2,9 +2,7 @@
 
 Moduł ocenia, jak wykryte obiekty wpływają na kategorię priorytetu
 (podstawowy, podwyższony, wysoki). Heurystyczny wskaźnik cech obrazu jest
-liczony i zapisywany osobno; od wersji 0.3.5 nie wchodzi do punktacji.
-Od 0.3.6 wskaźnik ma inną kalibrację (test 7.4.5), ale nadal nie punktuje.
-Reguły są deterministyczne i współdzielone przez komunikat oraz raport JSON.
+liczony i zapisywany osobno. Reguły są deterministyczne i współdzielone przez komunikat oraz raport JSON.
 """
 
 from __future__ import annotations
@@ -32,7 +30,7 @@ def assess_priority(
     detections: Sequence[Detection],
     scene_readability: SceneReadabilityResult,
 ) -> PriorityResult:
-    del scene_readability  # wskaźnik nie punktuje priorytetu od 0.3.5
+    del scene_readability
     score = 0.0
     reasons: list[str] = []
     strongest: Detection | None = None
