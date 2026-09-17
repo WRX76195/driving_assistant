@@ -1,12 +1,9 @@
 """Opcjonalny bootstrap na poziomie obrazu na rozpakowanym archiwum 2000 par.
 
-Pomiaru nie wykonano w zakresie PE1. Skrypt jest w archiwum, żeby dało się
-odtworzyć polecenie z Tabeli 8.4 pracy:
-
     python bootstrap_obrazowy_bdd.py --pairs-dir <katalog_2000_par> --replicates 2000 --seed 20260827 --output bootstrap.json
 
 Predykcje liczone są samodzielnie (jedna inferencja na obraz, potem resampling
-całych kadrów). Przedziały Cloppera-Pearsona z Tabeli 7.12 pozostają dolnym
+całych kadrów). Przedziały Cloppera-Pearsona pozostają dolnym
 oszacowaniem, dopóki ten pomiar nie zostanie uruchomiony.
 """
 
@@ -129,7 +126,7 @@ def main() -> int:
         "app_version": APP_VERSION,
         "created_at_utc": datetime.now(UTC).isoformat(),
         "note": (
-            "Opcjonalny bootstrap obrazowy z Tabeli 8.4. Resampling ze zwracaniem "
+            "Opcjonalny bootstrap obrazowy. Resampling ze zwracaniem "
             "całych kadrów. Nie wchodzi do wyników PE1, dopóki pomiar nie zostanie "
             "wykonany i zapisany."
         ),
