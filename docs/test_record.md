@@ -13,7 +13,7 @@ Zmiany zachowania względem 0.3.5:
   `bootstrap_obrazowy_bdd.py`.
 
 Kontrole automatyczne 0.3.6: `pytest` (68 passed) oraz `ruff check .`.
-Tabela 7.7b: `docs/scene_readability_table_7_7_0.3.6.json`.
+ `docs/scene_readability_table_7_7_0.3.6.json`.
 Batch mini zbioru: `data/samples/batch_results_0.3.6.json`.
 
 ## Wersja 0.3.5
