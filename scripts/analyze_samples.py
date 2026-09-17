@@ -1,5 +1,7 @@
 """Uruchamia potok na mini zbiorze data/samples i zapisuje podsumowanie."""
 
+# ruff: noqa: E402
+
 from __future__ import annotations
 
 import json
