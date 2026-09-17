@@ -1,0 +1,346 @@
+{
+  "seed": 20260829,
+  "n_scenes": 20000,
+  "n_pairs": 200000,
+  "note": "Wskaźnik cech obrazu jest losowany, ale od 0.3.5 nie wchodzi do punktacji assess_priority.",
+  "gt": {
+    "n_with_detections": 19220,
+    "not_largest_nor_central_pct": 9.708636836628513,
+    "mean_main_area": 0.042612976422196545,
+    "mean_max_area": 0.10041523375000729,
+    "street_pattern_pct": 34.497160040093554,
+    "mentioned_share_pct": 15.278797342971021,
+    "dense_mentioned_share_pct": 5.914487749262483,
+    "vru_other_pct": 13.27798028891589,
+    "pair_inversion_pct": 8.3475,
+    "extreme_inversion_pct": 8.549760623649536,
+    "empty_no_message_pct": 100.0,
+    "levels_by_n": {
+      "0": {
+        "brak komunikatu": 780
+      },
+      "1": {
+        "podstawowy": 712,
+        "podwyższony": 57
+      },
+      "2": {
+        "podstawowy": 629,
+        "podwyższony": 114,
+        "wysoki": 6
+      },
+      "3": {
+        "podwyższony": 251,
+        "podstawowy": 533,
+        "wysoki": 10
+      },
+      "4": {
+        "podstawowy": 509,
+        "podwyższony": 287,
+        "wysoki": 19
+      },
+      "5": {
+        "podstawowy": 350,
+        "podwyższony": 341,
+        "wysoki": 18
+      },
+      "6": {
+        "podwyższony": 377,
+        "podstawowy": 380,
+        "wysoki": 36
+      },
+      "7": {
+        "podwyższony": 428,
+        "podstawowy": 319,
+        "wysoki": 37
+      },
+      "8": {
+        "podstawowy": 268,
+        "podwyższony": 475,
+        "wysoki": 42
+      },
+      "9": {
+        "podwyższony": 487,
+        "podstawowy": 225,
+        "wysoki": 49
+      },
+      "10": {
+        "podwyższony": 484,
+        "podstawowy": 223,
+        "wysoki": 48
+      },
+      "11": {
+        "podwyższony": 516,
+        "wysoki": 65,
+        "podstawowy": 196
+      },
+      "12": {
+        "podwyższony": 530,
+        "podstawowy": 197,
+        "wysoki": 57
+      },
+      "13": {
+        "podwyższony": 579,
+        "wysoki": 68,
+        "podstawowy": 124
+      },
+      "14": {
+        "podstawowy": 112,
+        "podwyższony": 536,
+        "wysoki": 58
+      },
+      "15": {
+        "podwyższony": 599,
+        "podstawowy": 102,
+        "wysoki": 78
+      },
+      "16": {
+        "wysoki": 81,
+        "podwyższony": 598,
+        "podstawowy": 107
+      },
+      "17": {
+        "podwyższony": 615,
+        "wysoki": 82,
+        "podstawowy": 69
+      },
+      "18": {
+        "wysoki": 101,
+        "podwyższony": 590,
+        "podstawowy": 73
+      },
+      "19": {
+        "podwyższony": 631,
+        "wysoki": 106,
+        "podstawowy": 52
+      },
+      "20": {
+        "podwyższony": 586,
+        "podstawowy": 62,
+        "wysoki": 83
+      },
+      "21": {
+        "wysoki": 91,
+        "podstawowy": 51,
+        "podwyższony": 623
+      },
+      "22": {
+        "wysoki": 105,
+        "podwyższony": 628,
+        "podstawowy": 46
+      },
+      "23": {
+        "podwyższony": 632,
+        "podstawowy": 42,
+        "wysoki": 104
+      },
+      "24": {
+        "podwyższony": 607,
+        "podstawowy": 35,
+        "wysoki": 122
+      },
+      "25": {
+        "podwyższony": 634,
+        "wysoki": 101,
+        "podstawowy": 32
+      }
+    },
+    "mean_score_by_n": {
+      "0": 0.0,
+      "1": 2.359297789336801,
+      "2": 2.883845126835781,
+      "3": 4.033879093198992,
+      "4": 4.194601226993865,
+      "5": 4.388716502115655,
+      "6": 4.461538461538462,
+      "7": 4.589923469387755,
+      "8": 4.7127388535031844,
+      "9": 4.767936925098555,
+      "10": 4.783046357615894,
+      "11": 4.882368082368083,
+      "12": 4.869770408163266,
+      "13": 5.033592736705577,
+      "14": 5.042067988668555,
+      "15": 5.085622593068035,
+      "16": 5.1183206106870225,
+      "17": 5.1757180156657965,
+      "18": 5.21282722513089,
+      "19": 5.272496831432193,
+      "20": 5.2272229822161425,
+      "21": 5.24718954248366,
+      "22": 5.298716302952503,
+      "23": 5.298971722365038,
+      "24": 5.338350785340314,
+      "25": 5.3202086049543675
+    }
+  },
+  "det": {
+    "n_with_detections": 19236,
+    "not_largest_nor_central_pct": 10.059263880224579,
+    "mean_main_area": 0.045838310281498595,
+    "mean_max_area": 0.10078463686325632,
+    "street_pattern_pct": 30.017994438082773,
+    "mentioned_share_pct": 15.049065359448832,
+    "dense_mentioned_share_pct": 5.922591791734049,
+    "vru_other_pct": 17.15357426242516,
+    "pair_inversion_pct": 9.3455,
+    "extreme_inversion_pct": 9.104743684508023,
+    "empty_no_message_pct": 100.0,
+    "levels_by_n": {
+      "0": {
+        "brak komunikatu": 764
+      },
+      "1": {
+        "podstawowy": 706,
+        "podwyższony": 54
+      },
+      "2": {
+        "podstawowy": 625,
+        "podwyższony": 82,
+        "wysoki": 3
+      },
+      "3": {
+        "podstawowy": 558,
+        "podwyższony": 191,
+        "wysoki": 16
+      },
+      "4": {
+        "podstawowy": 471,
+        "podwyższony": 251,
+        "wysoki": 15
+      },
+      "5": {
+        "podstawowy": 428,
+        "podwyższony": 312,
+        "wysoki": 22
+      },
+      "6": {
+        "podstawowy": 360,
+        "podwyższony": 353,
+        "wysoki": 28
+      },
+      "7": {
+        "podstawowy": 315,
+        "podwyższony": 399,
+        "wysoki": 22
+      },
+      "8": {
+        "podwyższony": 425,
+        "podstawowy": 335,
+        "wysoki": 34
+      },
+      "9": {
+        "podwyższony": 504,
+        "podstawowy": 303,
+        "wysoki": 39
+      },
+      "10": {
+        "podwyższony": 512,
+        "podstawowy": 257,
+        "wysoki": 35
+      },
+      "11": {
+        "podwyższony": 508,
+        "wysoki": 43,
+        "podstawowy": 237
+      },
+      "12": {
+        "podwyższony": 499,
+        "wysoki": 57,
+        "podstawowy": 213
+      },
+      "13": {
+        "podstawowy": 170,
+        "podwyższony": 572,
+        "wysoki": 54
+      },
+      "14": {
+        "podwyższony": 556,
+        "wysoki": 58,
+        "podstawowy": 169
+      },
+      "15": {
+        "podwyższony": 560,
+        "podstawowy": 152,
+        "wysoki": 53
+      },
+      "16": {
+        "podwyższony": 589,
+        "wysoki": 67,
+        "podstawowy": 132
+      },
+      "17": {
+        "podwyższony": 573,
+        "wysoki": 59,
+        "podstawowy": 106
+      },
+      "18": {
+        "podwyższony": 586,
+        "podstawowy": 93,
+        "wysoki": 85
+      },
+      "19": {
+        "podwyższony": 560,
+        "wysoki": 88,
+        "podstawowy": 88
+      },
+      "20": {
+        "podwyższony": 598,
+        "podstawowy": 78,
+        "wysoki": 68
+      },
+      "21": {
+        "podwyższony": 642,
+        "podstawowy": 76,
+        "wysoki": 85
+      },
+      "22": {
+        "podwyższony": 634,
+        "podstawowy": 83,
+        "wysoki": 102
+      },
+      "23": {
+        "podwyższony": 635,
+        "wysoki": 94,
+        "podstawowy": 50
+      },
+      "24": {
+        "podwyższony": 635,
+        "wysoki": 84,
+        "podstawowy": 48
+      },
+      "25": {
+        "wysoki": 95,
+        "podwyższony": 604,
+        "podstawowy": 43
+      }
+    },
+    "mean_score_by_n": {
+      "0": 0.0,
+      "1": 2.271184210526316,
+      "2": 2.8129577464788733,
+      "3": 3.936862745098039,
+      "4": 4.112890094979647,
+      "5": 4.281102362204724,
+      "6": 4.4089068825910935,
+      "7": 4.4919836956521735,
+      "8": 4.519143576826196,
+      "9": 4.630496453900709,
+      "10": 4.706218905472636,
+      "11": 4.763832487309645,
+      "12": 4.806762028608583,
+      "13": 4.901130653266331,
+      "14": 4.910344827586207,
+      "15": 4.92718954248366,
+      "16": 5.011421319796955,
+      "17": 5.026016260162601,
+      "18": 5.122774869109947,
+      "19": 5.122282608695652,
+      "20": 5.113172043010753,
+      "21": 5.153798256537983,
+      "22": 5.172405372405372,
+      "23": 5.219640564826701,
+      "24": 5.233376792698826,
+      "25": 5.2494609164420485
+    }
+  }
+}

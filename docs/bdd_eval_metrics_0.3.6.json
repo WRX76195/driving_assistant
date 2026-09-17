@@ -1,0 +1,2372 @@
+{
+  "app_version": "0.3.6",
+  "created_at_utc": "2026-08-29T16:37:08.328114+00:00",
+  "dataset": {
+    "name": "BDD100K fixed detection subset (2000 image-label pairs)",
+    "source_archive_name": "bdd100k_2000_pairs.zip",
+    "source_archive_sha256": "96b5d5e9e226e17e3b9f249eb568c033368c8d8041fa62469e3ebcaa284f7f72",
+    "selection_protocol": {
+      "used_pairs": "wszystkie wspólne pary nazw, uporządkowane alfabetycznie",
+      "random_sampling": false,
+      "seed": null,
+      "stratification": false,
+      "source_split": "brak tej informacji w metadanych archiwum"
+    },
+    "pairs_found": 2000,
+    "images_evaluated": 2000,
+    "failed_images": [],
+    "images_with_supported_ground_truth": 1992,
+    "ground_truth_boxes": 27071,
+    "predicted_boxes_at_analysis_threshold": 10385,
+    "image_metadata_distribution": {
+      "weather": {
+        "clear": 698,
+        "overcast": 422,
+        "partly cloudy": 247,
+        "rainy": 143,
+        "snowy": 152,
+        "undefined": 338
+      },
+      "scene": {
+        "city street": 1212,
+        "highway": 463,
+        "parking lot": 14,
+        "residential": 300,
+        "tunnel": 3,
+        "undefined": 8
+      },
+      "timeofday": {
+        "dawn/dusk": 224,
+        "daytime": 1687,
+        "night": 86,
+        "undefined": 3
+      }
+    },
+    "class_mapping": {
+      "person": "person",
+      "pedestrian": "person",
+      "rider": "person",
+      "car": "car",
+      "bus": "bus",
+      "truck": "truck",
+      "bike": "bicycle",
+      "bicycle": "bicycle",
+      "motor": "motorcycle",
+      "motorcycle": "motorcycle"
+    },
+    "citation": "Yu et al., BDD100K: A Diverse Driving Dataset for Heterogeneous Multitask Learning, CVPR 2020",
+    "license_note": "Warunki wykorzystania danych należy sprawdzić u właściciela BDD100K."
+  },
+  "protocol": {
+    "model": "yolo11n.pt",
+    "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "expected_model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "base_prediction_confidence": 0.05,
+    "evaluated_confidence_thresholds": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "analysis_threshold": 0.35,
+    "iou_matching_threshold": 0.5,
+    "matching": "zachłanne dopasowanie 1:1 malejąco według IoU, oddzielnie dla każdej klasy",
+    "supported_classes": [
+      "bicycle",
+      "bus",
+      "car",
+      "motorcycle",
+      "person",
+      "truck"
+    ]
+  },
+  "metrics_at_analysis_threshold": {
+    "micro": {
+      "tp": 8730,
+      "fp": 1655,
+      "fn": 18341,
+      "precision": 0.840636,
+      "recall": 0.322485,
+      "f1": 0.466147
+    },
+    "per_class": {
+      "bicycle": {
+        "tp": 25,
+        "fp": 3,
+        "fn": 264,
+        "precision": 0.892857,
+        "recall": 0.086505,
+        "f1": 0.157729
+      },
+      "bus": {
+        "tp": 121,
+        "fp": 128,
+        "fn": 294,
+        "precision": 0.485944,
+        "recall": 0.291566,
+        "f1": 0.364458
+      },
+      "car": {
+        "tp": 7448,
+        "fp": 963,
+        "fn": 14111,
+        "precision": 0.885507,
+        "recall": 0.345471,
+        "f1": 0.49703
+      },
+      "motorcycle": {
+        "tp": 18,
+        "fp": 10,
+        "fn": 111,
+        "precision": 0.642857,
+        "recall": 0.139535,
+        "f1": 0.229299
+      },
+      "person": {
+        "tp": 828,
+        "fp": 156,
+        "fn": 2749,
+        "precision": 0.841463,
+        "recall": 0.231479,
+        "f1": 0.363078
+      },
+      "truck": {
+        "tp": 290,
+        "fp": 395,
+        "fn": 812,
+        "precision": 0.423358,
+        "recall": 0.263158,
+        "f1": 0.324566
+      }
+    },
+    "predicted_boxes": 10385
+  },
+  "metrics_by_confidence": {
+    "0.05": {
+      "micro": {
+        "tp": 14435,
+        "fp": 27268,
+        "fn": 12636,
+        "precision": 0.346138,
+        "recall": 0.533227,
+        "f1": 0.419781
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 62,
+          "fp": 192,
+          "fn": 227,
+          "precision": 0.244094,
+          "recall": 0.214533,
+          "f1": 0.228361
+        },
+        "bus": {
+          "tp": 173,
+          "fp": 652,
+          "fn": 242,
+          "precision": 0.209697,
+          "recall": 0.416867,
+          "f1": 0.279032
+        },
+        "car": {
+          "tp": 11962,
+          "fp": 20303,
+          "fn": 9597,
+          "precision": 0.370742,
+          "recall": 0.554849,
+          "f1": 0.444486
+        },
+        "motorcycle": {
+          "tp": 33,
+          "fp": 189,
+          "fn": 96,
+          "precision": 0.148649,
+          "recall": 0.255814,
+          "f1": 0.188034
+        },
+        "person": {
+          "tp": 1723,
+          "fp": 4098,
+          "fn": 1854,
+          "precision": 0.295997,
+          "recall": 0.481689,
+          "f1": 0.366674
+        },
+        "truck": {
+          "tp": 482,
+          "fp": 1834,
+          "fn": 620,
+          "precision": 0.208117,
+          "recall": 0.437387,
+          "f1": 0.282036
+        }
+      },
+      "predicted_boxes": 41703
+    },
+    "0.10": {
+      "micro": {
+        "tp": 12941,
+        "fp": 13513,
+        "fn": 14130,
+        "precision": 0.489189,
+        "recall": 0.478039,
+        "f1": 0.48355
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 48,
+          "fp": 87,
+          "fn": 241,
+          "precision": 0.355556,
+          "recall": 0.16609,
+          "f1": 0.226415
+        },
+        "bus": {
+          "tp": 161,
+          "fp": 386,
+          "fn": 254,
+          "precision": 0.294333,
+          "recall": 0.387952,
+          "f1": 0.334719
+        },
+        "car": {
+          "tp": 10813,
+          "fp": 10006,
+          "fn": 10746,
+          "precision": 0.519381,
+          "recall": 0.501554,
+          "f1": 0.510312
+        },
+        "motorcycle": {
+          "tp": 32,
+          "fp": 80,
+          "fn": 97,
+          "precision": 0.285714,
+          "recall": 0.248062,
+          "f1": 0.26556
+        },
+        "person": {
+          "tp": 1462,
+          "fp": 1846,
+          "fn": 2115,
+          "precision": 0.441959,
+          "recall": 0.408722,
+          "f1": 0.424691
+        },
+        "truck": {
+          "tp": 425,
+          "fp": 1108,
+          "fn": 677,
+          "precision": 0.277234,
+          "recall": 0.385662,
+          "f1": 0.322581
+        }
+      },
+      "predicted_boxes": 26454
+    },
+    "0.15": {
+      "micro": {
+        "tp": 11876,
+        "fp": 8023,
+        "fn": 15195,
+        "precision": 0.596814,
+        "recall": 0.438698,
+        "f1": 0.505684
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 43,
+          "fp": 40,
+          "fn": 246,
+          "precision": 0.518072,
+          "recall": 0.148789,
+          "f1": 0.231183
+        },
+        "bus": {
+          "tp": 152,
+          "fp": 277,
+          "fn": 263,
+          "precision": 0.354312,
+          "recall": 0.366265,
+          "f1": 0.36019
+        },
+        "car": {
+          "tp": 9943,
+          "fp": 5804,
+          "fn": 11616,
+          "precision": 0.631422,
+          "recall": 0.461199,
+          "f1": 0.533051
+        },
+        "motorcycle": {
+          "tp": 32,
+          "fp": 48,
+          "fn": 97,
+          "precision": 0.4,
+          "recall": 0.248062,
+          "f1": 0.30622
+        },
+        "person": {
+          "tp": 1300,
+          "fp": 1024,
+          "fn": 2277,
+          "precision": 0.55938,
+          "recall": 0.363433,
+          "f1": 0.440603
+        },
+        "truck": {
+          "tp": 406,
+          "fp": 830,
+          "fn": 696,
+          "precision": 0.328479,
+          "recall": 0.368421,
+          "f1": 0.347305
+        }
+      },
+      "predicted_boxes": 19899
+    },
+    "0.20": {
+      "micro": {
+        "tp": 10892,
+        "fp": 5153,
+        "fn": 16179,
+        "precision": 0.678841,
+        "recall": 0.402349,
+        "f1": 0.505242
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 37,
+          "fp": 18,
+          "fn": 252,
+          "precision": 0.672727,
+          "recall": 0.128028,
+          "f1": 0.215116
+        },
+        "bus": {
+          "tp": 143,
+          "fp": 218,
+          "fn": 272,
+          "precision": 0.396122,
+          "recall": 0.344578,
+          "f1": 0.368557
+        },
+        "car": {
+          "tp": 9171,
+          "fp": 3593,
+          "fn": 12388,
+          "precision": 0.718505,
+          "recall": 0.425391,
+          "f1": 0.534394
+        },
+        "motorcycle": {
+          "tp": 28,
+          "fp": 30,
+          "fn": 101,
+          "precision": 0.482759,
+          "recall": 0.217054,
+          "f1": 0.299465
+        },
+        "person": {
+          "tp": 1142,
+          "fp": 612,
+          "fn": 2435,
+          "precision": 0.651083,
+          "recall": 0.319262,
+          "f1": 0.428437
+        },
+        "truck": {
+          "tp": 371,
+          "fp": 682,
+          "fn": 731,
+          "precision": 0.352327,
+          "recall": 0.336661,
+          "f1": 0.344316
+        }
+      },
+      "predicted_boxes": 16045
+    },
+    "0.25": {
+      "micro": {
+        "tp": 10082,
+        "fp": 3415,
+        "fn": 16989,
+        "precision": 0.746981,
+        "recall": 0.372428,
+        "f1": 0.497042
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 32,
+          "fp": 4,
+          "fn": 257,
+          "precision": 0.888889,
+          "recall": 0.110727,
+          "f1": 0.196923
+        },
+        "bus": {
+          "tp": 135,
+          "fp": 184,
+          "fn": 280,
+          "precision": 0.423197,
+          "recall": 0.325301,
+          "f1": 0.367847
+        },
+        "car": {
+          "tp": 8538,
+          "fp": 2267,
+          "fn": 13021,
+          "precision": 0.79019,
+          "recall": 0.39603,
+          "f1": 0.527623
+        },
+        "motorcycle": {
+          "tp": 22,
+          "fp": 21,
+          "fn": 107,
+          "precision": 0.511628,
+          "recall": 0.170543,
+          "f1": 0.255814
+        },
+        "person": {
+          "tp": 1016,
+          "fp": 373,
+          "fn": 2561,
+          "precision": 0.731461,
+          "recall": 0.284037,
+          "f1": 0.409182
+        },
+        "truck": {
+          "tp": 339,
+          "fp": 566,
+          "fn": 763,
+          "precision": 0.374586,
+          "recall": 0.307623,
+          "f1": 0.337818
+        }
+      },
+      "predicted_boxes": 13497
+    },
+    "0.30": {
+      "micro": {
+        "tp": 9407,
+        "fp": 2354,
+        "fn": 17664,
+        "precision": 0.799847,
+        "recall": 0.347494,
+        "f1": 0.484497
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 30,
+          "fp": 3,
+          "fn": 259,
+          "precision": 0.909091,
+          "recall": 0.103806,
+          "f1": 0.186335
+        },
+        "bus": {
+          "tp": 130,
+          "fp": 153,
+          "fn": 285,
+          "precision": 0.459364,
+          "recall": 0.313253,
+          "f1": 0.372493
+        },
+        "car": {
+          "tp": 7985,
+          "fp": 1475,
+          "fn": 13574,
+          "precision": 0.84408,
+          "recall": 0.370379,
+          "f1": 0.514846
+        },
+        "motorcycle": {
+          "tp": 20,
+          "fp": 10,
+          "fn": 109,
+          "precision": 0.666667,
+          "recall": 0.155039,
+          "f1": 0.251572
+        },
+        "person": {
+          "tp": 927,
+          "fp": 235,
+          "fn": 2650,
+          "precision": 0.797762,
+          "recall": 0.259156,
+          "f1": 0.391222
+        },
+        "truck": {
+          "tp": 315,
+          "fp": 478,
+          "fn": 787,
+          "precision": 0.397226,
+          "recall": 0.285844,
+          "f1": 0.332454
+        }
+      },
+      "predicted_boxes": 11761
+    },
+    "0.35": {
+      "micro": {
+        "tp": 8730,
+        "fp": 1655,
+        "fn": 18341,
+        "precision": 0.840636,
+        "recall": 0.322485,
+        "f1": 0.466147
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 25,
+          "fp": 3,
+          "fn": 264,
+          "precision": 0.892857,
+          "recall": 0.086505,
+          "f1": 0.157729
+        },
+        "bus": {
+          "tp": 121,
+          "fp": 128,
+          "fn": 294,
+          "precision": 0.485944,
+          "recall": 0.291566,
+          "f1": 0.364458
+        },
+        "car": {
+          "tp": 7448,
+          "fp": 963,
+          "fn": 14111,
+          "precision": 0.885507,
+          "recall": 0.345471,
+          "f1": 0.49703
+        },
+        "motorcycle": {
+          "tp": 18,
+          "fp": 10,
+          "fn": 111,
+          "precision": 0.642857,
+          "recall": 0.139535,
+          "f1": 0.229299
+        },
+        "person": {
+          "tp": 828,
+          "fp": 156,
+          "fn": 2749,
+          "precision": 0.841463,
+          "recall": 0.231479,
+          "f1": 0.363078
+        },
+        "truck": {
+          "tp": 290,
+          "fp": 395,
+          "fn": 812,
+          "precision": 0.423358,
+          "recall": 0.263158,
+          "f1": 0.324566
+        }
+      },
+      "predicted_boxes": 10385
+    },
+    "0.40": {
+      "micro": {
+        "tp": 8068,
+        "fp": 1146,
+        "fn": 19003,
+        "precision": 0.875624,
+        "recall": 0.298031,
+        "f1": 0.444702
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 21,
+          "fp": 3,
+          "fn": 268,
+          "precision": 0.875,
+          "recall": 0.072664,
+          "f1": 0.134185
+        },
+        "bus": {
+          "tp": 109,
+          "fp": 104,
+          "fn": 306,
+          "precision": 0.511737,
+          "recall": 0.262651,
+          "f1": 0.347134
+        },
+        "car": {
+          "tp": 6910,
+          "fp": 621,
+          "fn": 14649,
+          "precision": 0.917541,
+          "recall": 0.320516,
+          "f1": 0.475077
+        },
+        "motorcycle": {
+          "tp": 17,
+          "fp": 5,
+          "fn": 112,
+          "precision": 0.772727,
+          "recall": 0.131783,
+          "f1": 0.225166
+        },
+        "person": {
+          "tp": 745,
+          "fp": 99,
+          "fn": 2832,
+          "precision": 0.882701,
+          "recall": 0.208275,
+          "f1": 0.337028
+        },
+        "truck": {
+          "tp": 266,
+          "fp": 314,
+          "fn": 836,
+          "precision": 0.458621,
+          "recall": 0.241379,
+          "f1": 0.31629
+        }
+      },
+      "predicted_boxes": 9214
+    },
+    "0.45": {
+      "micro": {
+        "tp": 7408,
+        "fp": 831,
+        "fn": 19663,
+        "precision": 0.899138,
+        "recall": 0.273651,
+        "f1": 0.419598
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 18,
+          "fp": 2,
+          "fn": 271,
+          "precision": 0.9,
+          "recall": 0.062284,
+          "f1": 0.116505
+        },
+        "bus": {
+          "tp": 101,
+          "fp": 88,
+          "fn": 314,
+          "precision": 0.534392,
+          "recall": 0.243373,
+          "f1": 0.334437
+        },
+        "car": {
+          "tp": 6381,
+          "fp": 424,
+          "fn": 15178,
+          "precision": 0.937693,
+          "recall": 0.295978,
+          "f1": 0.449937
+        },
+        "motorcycle": {
+          "tp": 15,
+          "fp": 3,
+          "fn": 114,
+          "precision": 0.833333,
+          "recall": 0.116279,
+          "f1": 0.204082
+        },
+        "person": {
+          "tp": 656,
+          "fp": 63,
+          "fn": 2921,
+          "precision": 0.912378,
+          "recall": 0.183394,
+          "f1": 0.3054
+        },
+        "truck": {
+          "tp": 237,
+          "fp": 251,
+          "fn": 865,
+          "precision": 0.485656,
+          "recall": 0.215064,
+          "f1": 0.298113
+        }
+      },
+      "predicted_boxes": 8239
+    },
+    "0.50": {
+      "micro": {
+        "tp": 6748,
+        "fp": 577,
+        "fn": 20323,
+        "precision": 0.921229,
+        "recall": 0.24927,
+        "f1": 0.392371
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 15,
+          "fp": 1,
+          "fn": 274,
+          "precision": 0.9375,
+          "recall": 0.051903,
+          "f1": 0.098361
+        },
+        "bus": {
+          "tp": 95,
+          "fp": 71,
+          "fn": 320,
+          "precision": 0.572289,
+          "recall": 0.228916,
+          "f1": 0.327022
+        },
+        "car": {
+          "tp": 5837,
+          "fp": 273,
+          "fn": 15722,
+          "precision": 0.955319,
+          "recall": 0.270745,
+          "f1": 0.421916
+        },
+        "motorcycle": {
+          "tp": 14,
+          "fp": 3,
+          "fn": 115,
+          "precision": 0.823529,
+          "recall": 0.108527,
+          "f1": 0.191781
+        },
+        "person": {
+          "tp": 575,
+          "fp": 44,
+          "fn": 3002,
+          "precision": 0.928918,
+          "recall": 0.160749,
+          "f1": 0.274071
+        },
+        "truck": {
+          "tp": 212,
+          "fp": 185,
+          "fn": 890,
+          "precision": 0.534005,
+          "recall": 0.192377,
+          "f1": 0.282855
+        }
+      },
+      "predicted_boxes": 7325
+    },
+    "0.55": {
+      "micro": {
+        "tp": 6038,
+        "fp": 373,
+        "fn": 21033,
+        "precision": 0.941819,
+        "recall": 0.223043,
+        "f1": 0.360671
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 10,
+          "fp": 1,
+          "fn": 279,
+          "precision": 0.909091,
+          "recall": 0.034602,
+          "f1": 0.066667
+        },
+        "bus": {
+          "tp": 92,
+          "fp": 57,
+          "fn": 323,
+          "precision": 0.61745,
+          "recall": 0.221687,
+          "f1": 0.326241
+        },
+        "car": {
+          "tp": 5258,
+          "fp": 175,
+          "fn": 16301,
+          "precision": 0.967789,
+          "recall": 0.243889,
+          "f1": 0.389597
+        },
+        "motorcycle": {
+          "tp": 12,
+          "fp": 1,
+          "fn": 117,
+          "precision": 0.923077,
+          "recall": 0.093023,
+          "f1": 0.169014
+        },
+        "person": {
+          "tp": 478,
+          "fp": 17,
+          "fn": 3099,
+          "precision": 0.965657,
+          "recall": 0.133632,
+          "f1": 0.234774
+        },
+        "truck": {
+          "tp": 188,
+          "fp": 122,
+          "fn": 914,
+          "precision": 0.606452,
+          "recall": 0.170599,
+          "f1": 0.266289
+        }
+      },
+      "predicted_boxes": 6411
+    },
+    "0.60": {
+      "micro": {
+        "tp": 5380,
+        "fp": 251,
+        "fn": 21691,
+        "precision": 0.955425,
+        "recall": 0.198737,
+        "f1": 0.329032
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 283,
+          "precision": 1.0,
+          "recall": 0.020761,
+          "f1": 0.040678
+        },
+        "bus": {
+          "tp": 88,
+          "fp": 40,
+          "fn": 327,
+          "precision": 0.6875,
+          "recall": 0.212048,
+          "f1": 0.324125
+        },
+        "car": {
+          "tp": 4718,
+          "fp": 109,
+          "fn": 16841,
+          "precision": 0.977419,
+          "recall": 0.218841,
+          "f1": 0.357614
+        },
+        "motorcycle": {
+          "tp": 8,
+          "fp": 1,
+          "fn": 121,
+          "precision": 0.888889,
+          "recall": 0.062016,
+          "f1": 0.115942
+        },
+        "person": {
+          "tp": 388,
+          "fp": 12,
+          "fn": 3189,
+          "precision": 0.97,
+          "recall": 0.108471,
+          "f1": 0.195122
+        },
+        "truck": {
+          "tp": 172,
+          "fp": 89,
+          "fn": 930,
+          "precision": 0.659004,
+          "recall": 0.15608,
+          "f1": 0.252384
+        }
+      },
+      "predicted_boxes": 5631
+    },
+    "0.65": {
+      "micro": {
+        "tp": 4694,
+        "fp": 153,
+        "fn": 22377,
+        "precision": 0.968434,
+        "recall": 0.173396,
+        "f1": 0.294129
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 284,
+          "precision": 1.0,
+          "recall": 0.017301,
+          "f1": 0.034014
+        },
+        "bus": {
+          "tp": 83,
+          "fp": 28,
+          "fn": 332,
+          "precision": 0.747748,
+          "recall": 0.2,
+          "f1": 0.315589
+        },
+        "car": {
+          "tp": 4159,
+          "fp": 61,
+          "fn": 17400,
+          "precision": 0.985545,
+          "recall": 0.192912,
+          "f1": 0.322666
+        },
+        "motorcycle": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 123,
+          "precision": 0.857143,
+          "recall": 0.046512,
+          "f1": 0.088235
+        },
+        "person": {
+          "tp": 298,
+          "fp": 5,
+          "fn": 3279,
+          "precision": 0.983498,
+          "recall": 0.08331,
+          "f1": 0.153608
+        },
+        "truck": {
+          "tp": 143,
+          "fp": 58,
+          "fn": 959,
+          "precision": 0.711443,
+          "recall": 0.129764,
+          "f1": 0.219493
+        }
+      },
+      "predicted_boxes": 4847
+    },
+    "0.70": {
+      "micro": {
+        "tp": 3951,
+        "fp": 106,
+        "fn": 23120,
+        "precision": 0.973872,
+        "recall": 0.14595,
+        "f1": 0.253855
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 284,
+          "precision": 1.0,
+          "recall": 0.017301,
+          "f1": 0.034014
+        },
+        "bus": {
+          "tp": 74,
+          "fp": 26,
+          "fn": 341,
+          "precision": 0.74,
+          "recall": 0.178313,
+          "f1": 0.287379
+        },
+        "car": {
+          "tp": 3526,
+          "fp": 35,
+          "fn": 18033,
+          "precision": 0.990171,
+          "recall": 0.163551,
+          "f1": 0.280732
+        },
+        "motorcycle": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 125,
+          "precision": 1.0,
+          "recall": 0.031008,
+          "f1": 0.06015
+        },
+        "person": {
+          "tp": 218,
+          "fp": 3,
+          "fn": 3359,
+          "precision": 0.986425,
+          "recall": 0.060945,
+          "f1": 0.114797
+        },
+        "truck": {
+          "tp": 124,
+          "fp": 42,
+          "fn": 978,
+          "precision": 0.746988,
+          "recall": 0.112523,
+          "f1": 0.195584
+        }
+      },
+      "predicted_boxes": 4057
+    },
+    "0.75": {
+      "micro": {
+        "tp": 3129,
+        "fp": 69,
+        "fn": 23942,
+        "precision": 0.978424,
+        "recall": 0.115585,
+        "f1": 0.206746
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 285,
+          "precision": 1.0,
+          "recall": 0.013841,
+          "f1": 0.027304
+        },
+        "bus": {
+          "tp": 62,
+          "fp": 20,
+          "fn": 353,
+          "precision": 0.756098,
+          "recall": 0.149398,
+          "f1": 0.249497
+        },
+        "car": {
+          "tp": 2827,
+          "fp": 23,
+          "fn": 18732,
+          "precision": 0.99193,
+          "recall": 0.131129,
+          "f1": 0.231636
+        },
+        "motorcycle": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 126,
+          "precision": 1.0,
+          "recall": 0.023256,
+          "f1": 0.045455
+        },
+        "person": {
+          "tp": 128,
+          "fp": 1,
+          "fn": 3449,
+          "precision": 0.992248,
+          "recall": 0.035784,
+          "f1": 0.069077
+        },
+        "truck": {
+          "tp": 105,
+          "fp": 25,
+          "fn": 997,
+          "precision": 0.807692,
+          "recall": 0.095281,
+          "f1": 0.170455
+        }
+      },
+      "predicted_boxes": 3198
+    },
+    "0.80": {
+      "micro": {
+        "tp": 2277,
+        "fp": 41,
+        "fn": 24794,
+        "precision": 0.982312,
+        "recall": 0.084112,
+        "f1": 0.154956
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 288,
+          "precision": 1.0,
+          "recall": 0.00346,
+          "f1": 0.006897
+        },
+        "bus": {
+          "tp": 47,
+          "fp": 14,
+          "fn": 368,
+          "precision": 0.770492,
+          "recall": 0.113253,
+          "f1": 0.197479
+        },
+        "car": {
+          "tp": 2100,
+          "fp": 14,
+          "fn": 19459,
+          "precision": 0.993377,
+          "recall": 0.097407,
+          "f1": 0.177417
+        },
+        "motorcycle": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 128,
+          "precision": 1.0,
+          "recall": 0.007752,
+          "f1": 0.015385
+        },
+        "person": {
+          "tp": 55,
+          "fp": 0,
+          "fn": 3522,
+          "precision": 1.0,
+          "recall": 0.015376,
+          "f1": 0.030286
+        },
+        "truck": {
+          "tp": 73,
+          "fp": 13,
+          "fn": 1029,
+          "precision": 0.848837,
+          "recall": 0.066243,
+          "f1": 0.122896
+        }
+      },
+      "predicted_boxes": 2318
+    },
+    "0.85": {
+      "micro": {
+        "tp": 1352,
+        "fp": 15,
+        "fn": 25719,
+        "precision": 0.989027,
+        "recall": 0.049943,
+        "f1": 0.095084
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 288,
+          "precision": 1.0,
+          "recall": 0.00346,
+          "f1": 0.006897
+        },
+        "bus": {
+          "tp": 37,
+          "fp": 6,
+          "fn": 378,
+          "precision": 0.860465,
+          "recall": 0.089157,
+          "f1": 0.161572
+        },
+        "car": {
+          "tp": 1252,
+          "fp": 7,
+          "fn": 20307,
+          "precision": 0.99444,
+          "recall": 0.058073,
+          "f1": 0.109738
+        },
+        "motorcycle": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 129,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "person": {
+          "tp": 19,
+          "fp": 0,
+          "fn": 3558,
+          "precision": 1.0,
+          "recall": 0.005312,
+          "f1": 0.010567
+        },
+        "truck": {
+          "tp": 43,
+          "fp": 2,
+          "fn": 1059,
+          "precision": 0.955556,
+          "recall": 0.03902,
+          "f1": 0.074978
+        }
+      },
+      "predicted_boxes": 1367
+    },
+    "0.90": {
+      "micro": {
+        "tp": 346,
+        "fp": 3,
+        "fn": 26725,
+        "precision": 0.991404,
+        "recall": 0.012781,
+        "f1": 0.025237
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 289,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "bus": {
+          "tp": 19,
+          "fp": 2,
+          "fn": 396,
+          "precision": 0.904762,
+          "recall": 0.045783,
+          "f1": 0.087156
+        },
+        "car": {
+          "tp": 308,
+          "fp": 1,
+          "fn": 21251,
+          "precision": 0.996764,
+          "recall": 0.014286,
+          "f1": 0.028169
+        },
+        "motorcycle": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 129,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "person": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 3573,
+          "precision": 1.0,
+          "recall": 0.001118,
+          "f1": 0.002234
+        },
+        "truck": {
+          "tp": 15,
+          "fp": 0,
+          "fn": 1087,
+          "precision": 1.0,
+          "recall": 0.013612,
+          "f1": 0.026858
+        }
+      },
+      "predicted_boxes": 349
+    },
+    "0.95": {
+      "micro": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 27067,
+        "precision": 1.0,
+        "recall": 0.000148,
+        "f1": 0.000295
+      },
+      "per_class": {
+        "bicycle": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 289,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "bus": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 414,
+          "precision": 1.0,
+          "recall": 0.00241,
+          "f1": 0.004808
+        },
+        "car": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 21557,
+          "precision": 1.0,
+          "recall": 9.3e-05,
+          "f1": 0.000186
+        },
+        "motorcycle": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 129,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "person": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3577,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "truck": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 1101,
+          "precision": 1.0,
+          "recall": 0.000907,
+          "f1": 0.001813
+        }
+      },
+      "predicted_boxes": 4
+    }
+  },
+  "precision_recall_curve_micro": [
+    {
+      "confidence": 0.05,
+      "precision": 0.346138,
+      "recall": 0.533227,
+      "f1": 0.419781
+    },
+    {
+      "confidence": 0.1,
+      "precision": 0.489189,
+      "recall": 0.478039,
+      "f1": 0.48355
+    },
+    {
+      "confidence": 0.15,
+      "precision": 0.596814,
+      "recall": 0.438698,
+      "f1": 0.505684
+    },
+    {
+      "confidence": 0.2,
+      "precision": 0.678841,
+      "recall": 0.402349,
+      "f1": 0.505242
+    },
+    {
+      "confidence": 0.25,
+      "precision": 0.746981,
+      "recall": 0.372428,
+      "f1": 0.497042
+    },
+    {
+      "confidence": 0.3,
+      "precision": 0.799847,
+      "recall": 0.347494,
+      "f1": 0.484497
+    },
+    {
+      "confidence": 0.35,
+      "precision": 0.840636,
+      "recall": 0.322485,
+      "f1": 0.466147
+    },
+    {
+      "confidence": 0.4,
+      "precision": 0.875624,
+      "recall": 0.298031,
+      "f1": 0.444702
+    },
+    {
+      "confidence": 0.45,
+      "precision": 0.899138,
+      "recall": 0.273651,
+      "f1": 0.419598
+    },
+    {
+      "confidence": 0.5,
+      "precision": 0.921229,
+      "recall": 0.24927,
+      "f1": 0.392371
+    },
+    {
+      "confidence": 0.55,
+      "precision": 0.941819,
+      "recall": 0.223043,
+      "f1": 0.360671
+    },
+    {
+      "confidence": 0.6,
+      "precision": 0.955425,
+      "recall": 0.198737,
+      "f1": 0.329032
+    },
+    {
+      "confidence": 0.65,
+      "precision": 0.968434,
+      "recall": 0.173396,
+      "f1": 0.294129
+    },
+    {
+      "confidence": 0.7,
+      "precision": 0.973872,
+      "recall": 0.14595,
+      "f1": 0.253855
+    },
+    {
+      "confidence": 0.75,
+      "precision": 0.978424,
+      "recall": 0.115585,
+      "f1": 0.206746
+    },
+    {
+      "confidence": 0.8,
+      "precision": 0.982312,
+      "recall": 0.084112,
+      "f1": 0.154956
+    },
+    {
+      "confidence": 0.85,
+      "precision": 0.989027,
+      "recall": 0.049943,
+      "f1": 0.095084
+    },
+    {
+      "confidence": 0.9,
+      "precision": 0.991404,
+      "recall": 0.012781,
+      "f1": 0.025237
+    },
+    {
+      "confidence": 0.95,
+      "precision": 1.0,
+      "recall": 0.000148,
+      "f1": 0.000295
+    }
+  ],
+  "best_micro_f1_on_evaluated_thresholds": {
+    "confidence": 0.15,
+    "precision": 0.596814,
+    "recall": 0.438698,
+    "f1": 0.505684
+  },
+  "average_precision": {
+    "method": "interpolacja VOC na N progach wyniku ufności, nie pełny ranking detekcji",
+    "n_confidence_thresholds": 19,
+    "iou": 0.5,
+    "micro": 0.424009,
+    "macro_mean": 0.269988,
+    "per_class": {
+      "bicycle": 0.143664,
+      "bus": 0.255548,
+      "car": 0.460579,
+      "motorcycle": 0.179058,
+      "person": 0.348018,
+      "truck": 0.23306
+    },
+    "note": "Przy maksymalnej kompletności poniżej 1 część całki VOC do recall=1 jest zerowa."
+  },
+  "average_precision_ranking": {
+    "method": "interpolacja VOC 2010+ na pełnym rankingu ufności; dopasowanie 1:1 zachłanne według IoU, osobno dla klasy (mikro: klasowo w puli)",
+    "iou": 0.5,
+    "micro": {
+      "ap": 0.436027,
+      "n_gt": 27071,
+      "n_predictions": 41703
+    },
+    "macro_mean": 0.280977,
+    "per_class": {
+      "bicycle": {
+        "ap": 0.156353,
+        "n_gt": 289,
+        "n_predictions": 254
+      },
+      "bus": {
+        "ap": 0.266014,
+        "n_gt": 415,
+        "n_predictions": 825
+      },
+      "car": {
+        "ap": 0.472457,
+        "n_gt": 21559,
+        "n_predictions": 32265
+      },
+      "motorcycle": {
+        "ap": 0.184751,
+        "n_gt": 129,
+        "n_predictions": 222
+      },
+      "person": {
+        "ap": 0.362987,
+        "n_gt": 3577,
+        "n_predictions": 5821
+      },
+      "truck": {
+        "ap": 0.243301,
+        "n_gt": 1102,
+        "n_predictions": 2316
+      }
+    },
+    "note": "Przy maksymalnej kompletności poniżej 1 część całki VOC do recall=1 jest zerowa. Wynik nie jest porównywalny z AP z siatki 19 progów."
+  },
+  "exploratory_recall_analysis_at_analysis_threshold": {
+    "rozmiar_ramki": {
+      "mały (<1%)": {
+        "tp": 4742,
+        "fn": 17401,
+        "recall": 0.214153,
+        "per_class": {
+          "bicycle": {
+            "tp": 10,
+            "fn": 236,
+            "recall": 0.04065
+          },
+          "bus": {
+            "tp": 10,
+            "fn": 236,
+            "recall": 0.04065
+          },
+          "car": {
+            "tp": 4026,
+            "fn": 13539,
+            "recall": 0.229206
+          },
+          "motorcycle": {
+            "tp": 6,
+            "fn": 90,
+            "recall": 0.0625
+          },
+          "person": {
+            "tp": 646,
+            "fn": 2685,
+            "recall": 0.193936
+          },
+          "truck": {
+            "tp": 44,
+            "fn": 615,
+            "recall": 0.066768
+          }
+        }
+      },
+      "średni (1–5%)": {
+        "tp": 2706,
+        "fn": 714,
+        "recall": 0.791228,
+        "per_class": {
+          "bicycle": {
+            "tp": 13,
+            "fn": 28,
+            "recall": 0.317073
+          },
+          "bus": {
+            "tp": 52,
+            "fn": 46,
+            "recall": 0.530612
+          },
+          "car": {
+            "tp": 2366,
+            "fn": 422,
+            "recall": 0.848637
+          },
+          "motorcycle": {
+            "tp": 8,
+            "fn": 21,
+            "recall": 0.275862
+          },
+          "person": {
+            "tp": 156,
+            "fn": 56,
+            "recall": 0.735849
+          },
+          "truck": {
+            "tp": 111,
+            "fn": 141,
+            "recall": 0.440476
+          }
+        }
+      },
+      "duży (≥5%)": {
+        "tp": 1282,
+        "fn": 226,
+        "recall": 0.850133,
+        "per_class": {
+          "bicycle": {
+            "tp": 2,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "bus": {
+            "tp": 59,
+            "fn": 12,
+            "recall": 0.830986
+          },
+          "car": {
+            "tp": 1056,
+            "fn": 150,
+            "recall": 0.875622
+          },
+          "motorcycle": {
+            "tp": 4,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "person": {
+            "tp": 26,
+            "fn": 8,
+            "recall": 0.764706
+          },
+          "truck": {
+            "tp": 135,
+            "fn": 56,
+            "recall": 0.706806
+          }
+        }
+      }
+    },
+    "zasłonięcie": {
+      "nie": {
+        "tp": 5077,
+        "fn": 3332,
+        "recall": 0.603758,
+        "per_class": {
+          "bicycle": {
+            "tp": 6,
+            "fn": 27,
+            "recall": 0.181818
+          },
+          "bus": {
+            "tp": 81,
+            "fn": 54,
+            "recall": 0.6
+          },
+          "car": {
+            "tp": 4260,
+            "fn": 2155,
+            "recall": 0.664069
+          },
+          "motorcycle": {
+            "tp": 4,
+            "fn": 24,
+            "recall": 0.142857
+          },
+          "person": {
+            "tp": 539,
+            "fn": 895,
+            "recall": 0.375872
+          },
+          "truck": {
+            "tp": 187,
+            "fn": 177,
+            "recall": 0.513736
+          }
+        }
+      },
+      "tak": {
+        "tp": 3653,
+        "fn": 15009,
+        "recall": 0.195745,
+        "per_class": {
+          "bicycle": {
+            "tp": 19,
+            "fn": 237,
+            "recall": 0.074219
+          },
+          "bus": {
+            "tp": 40,
+            "fn": 240,
+            "recall": 0.142857
+          },
+          "car": {
+            "tp": 3188,
+            "fn": 11956,
+            "recall": 0.210512
+          },
+          "motorcycle": {
+            "tp": 14,
+            "fn": 87,
+            "recall": 0.138614
+          },
+          "person": {
+            "tp": 289,
+            "fn": 1854,
+            "recall": 0.134858
+          },
+          "truck": {
+            "tp": 103,
+            "fn": 635,
+            "recall": 0.139566
+          }
+        }
+      }
+    },
+    "ucięcie": {
+      "tak": {
+        "tp": 1629,
+        "fn": 883,
+        "recall": 0.648487,
+        "per_class": {
+          "bicycle": {
+            "tp": 3,
+            "fn": 23,
+            "recall": 0.115385
+          },
+          "bus": {
+            "tp": 46,
+            "fn": 28,
+            "recall": 0.621622
+          },
+          "car": {
+            "tp": 1408,
+            "fn": 666,
+            "recall": 0.678881
+          },
+          "motorcycle": {
+            "tp": 5,
+            "fn": 11,
+            "recall": 0.3125
+          },
+          "person": {
+            "tp": 71,
+            "fn": 69,
+            "recall": 0.507143
+          },
+          "truck": {
+            "tp": 96,
+            "fn": 86,
+            "recall": 0.527473
+          }
+        }
+      },
+      "nie": {
+        "tp": 7101,
+        "fn": 17458,
+        "recall": 0.28914,
+        "per_class": {
+          "bicycle": {
+            "tp": 22,
+            "fn": 241,
+            "recall": 0.08365
+          },
+          "bus": {
+            "tp": 75,
+            "fn": 266,
+            "recall": 0.219941
+          },
+          "car": {
+            "tp": 6040,
+            "fn": 13445,
+            "recall": 0.309982
+          },
+          "motorcycle": {
+            "tp": 13,
+            "fn": 100,
+            "recall": 0.115044
+          },
+          "person": {
+            "tp": 757,
+            "fn": 2680,
+            "recall": 0.22025
+          },
+          "truck": {
+            "tp": 194,
+            "fn": 726,
+            "recall": 0.21087
+          }
+        }
+      }
+    },
+    "polozenie_w_kadrze": {
+      "pozacentralne": {
+        "tp": 5329,
+        "fn": 8638,
+        "recall": 0.381542,
+        "per_class": {
+          "bicycle": {
+            "tp": 22,
+            "fn": 184,
+            "recall": 0.106796
+          },
+          "bus": {
+            "tp": 89,
+            "fn": 137,
+            "recall": 0.393805
+          },
+          "car": {
+            "tp": 4342,
+            "fn": 6031,
+            "recall": 0.418587
+          },
+          "motorcycle": {
+            "tp": 14,
+            "fn": 70,
+            "recall": 0.166667
+          },
+          "person": {
+            "tp": 669,
+            "fn": 1812,
+            "recall": 0.269649
+          },
+          "truck": {
+            "tp": 193,
+            "fn": 404,
+            "recall": 0.323283
+          }
+        }
+      },
+      "centralne": {
+        "tp": 3401,
+        "fn": 9703,
+        "recall": 0.259539,
+        "per_class": {
+          "bicycle": {
+            "tp": 3,
+            "fn": 80,
+            "recall": 0.036145
+          },
+          "bus": {
+            "tp": 32,
+            "fn": 157,
+            "recall": 0.169312
+          },
+          "car": {
+            "tp": 3106,
+            "fn": 8080,
+            "recall": 0.277669
+          },
+          "motorcycle": {
+            "tp": 4,
+            "fn": 41,
+            "recall": 0.088889
+          },
+          "person": {
+            "tp": 159,
+            "fn": 937,
+            "recall": 0.145073
+          },
+          "truck": {
+            "tp": 97,
+            "fn": 408,
+            "recall": 0.192079
+          }
+        }
+      }
+    },
+    "weather": {
+      "clear": {
+        "tp": 2584,
+        "fn": 6628,
+        "recall": 0.280504,
+        "per_class": {
+          "bicycle": {
+            "tp": 4,
+            "fn": 107,
+            "recall": 0.036036
+          },
+          "bus": {
+            "tp": 43,
+            "fn": 110,
+            "recall": 0.281046
+          },
+          "car": {
+            "tp": 2226,
+            "fn": 5273,
+            "recall": 0.29684
+          },
+          "motorcycle": {
+            "tp": 7,
+            "fn": 43,
+            "recall": 0.14
+          },
+          "person": {
+            "tp": 210,
+            "fn": 821,
+            "recall": 0.203686
+          },
+          "truck": {
+            "tp": 94,
+            "fn": 274,
+            "recall": 0.255435
+          }
+        }
+      },
+      "undefined": {
+        "tp": 1753,
+        "fn": 3027,
+        "recall": 0.366736,
+        "per_class": {
+          "bicycle": {
+            "tp": 14,
+            "fn": 65,
+            "recall": 0.177215
+          },
+          "bus": {
+            "tp": 31,
+            "fn": 59,
+            "recall": 0.344444
+          },
+          "car": {
+            "tp": 1394,
+            "fn": 1984,
+            "recall": 0.41267
+          },
+          "motorcycle": {
+            "tp": 6,
+            "fn": 15,
+            "recall": 0.285714
+          },
+          "person": {
+            "tp": 257,
+            "fn": 790,
+            "recall": 0.245463
+          },
+          "truck": {
+            "tp": 51,
+            "fn": 114,
+            "recall": 0.309091
+          }
+        }
+      },
+      "partly cloudy": {
+        "tp": 1117,
+        "fn": 2339,
+        "recall": 0.323206,
+        "per_class": {
+          "bicycle": {
+            "tp": 3,
+            "fn": 13,
+            "recall": 0.1875
+          },
+          "bus": {
+            "tp": 10,
+            "fn": 28,
+            "recall": 0.263158
+          },
+          "car": {
+            "tp": 976,
+            "fn": 1920,
+            "recall": 0.337017
+          },
+          "motorcycle": {
+            "tp": 2,
+            "fn": 13,
+            "recall": 0.133333
+          },
+          "person": {
+            "tp": 89,
+            "fn": 242,
+            "recall": 0.268882
+          },
+          "truck": {
+            "tp": 37,
+            "fn": 123,
+            "recall": 0.23125
+          }
+        }
+      },
+      "overcast": {
+        "tp": 2113,
+        "fn": 4072,
+        "recall": 0.341633,
+        "per_class": {
+          "bicycle": {
+            "tp": 3,
+            "fn": 57,
+            "recall": 0.05
+          },
+          "bus": {
+            "tp": 19,
+            "fn": 60,
+            "recall": 0.240506
+          },
+          "car": {
+            "tp": 1852,
+            "fn": 3171,
+            "recall": 0.368704
+          },
+          "motorcycle": {
+            "tp": 3,
+            "fn": 27,
+            "recall": 0.1
+          },
+          "person": {
+            "tp": 168,
+            "fn": 581,
+            "recall": 0.224299
+          },
+          "truck": {
+            "tp": 68,
+            "fn": 176,
+            "recall": 0.278689
+          }
+        }
+      },
+      "snowy": {
+        "tp": 616,
+        "fn": 1158,
+        "recall": 0.347238,
+        "per_class": {
+          "bicycle": {
+            "tp": 1,
+            "fn": 13,
+            "recall": 0.071429
+          },
+          "bus": {
+            "tp": 12,
+            "fn": 20,
+            "recall": 0.375
+          },
+          "car": {
+            "tp": 514,
+            "fn": 907,
+            "recall": 0.361717
+          },
+          "motorcycle": {
+            "tp": 0,
+            "fn": 2,
+            "recall": 0.0
+          },
+          "person": {
+            "tp": 68,
+            "fn": 162,
+            "recall": 0.295652
+          },
+          "truck": {
+            "tp": 21,
+            "fn": 54,
+            "recall": 0.28
+          }
+        }
+      },
+      "rainy": {
+        "tp": 547,
+        "fn": 1117,
+        "recall": 0.328726,
+        "per_class": {
+          "bicycle": {
+            "tp": 0,
+            "fn": 9,
+            "recall": 0.0
+          },
+          "bus": {
+            "tp": 6,
+            "fn": 17,
+            "recall": 0.26087
+          },
+          "car": {
+            "tp": 486,
+            "fn": 856,
+            "recall": 0.362146
+          },
+          "motorcycle": {
+            "tp": 0,
+            "fn": 11,
+            "recall": 0.0
+          },
+          "person": {
+            "tp": 36,
+            "fn": 153,
+            "recall": 0.190476
+          },
+          "truck": {
+            "tp": 19,
+            "fn": 71,
+            "recall": 0.211111
+          }
+        }
+      }
+    },
+    "scene": {
+      "city street": {
+        "tp": 5683,
+        "fn": 11824,
+        "recall": 0.324613,
+        "per_class": {
+          "bicycle": {
+            "tp": 23,
+            "fn": 241,
+            "recall": 0.087121
+          },
+          "bus": {
+            "tp": 99,
+            "fn": 202,
+            "recall": 0.328904
+          },
+          "car": {
+            "tp": 4583,
+            "fn": 8297,
+            "recall": 0.355823
+          },
+          "motorcycle": {
+            "tp": 14,
+            "fn": 79,
+            "recall": 0.150538
+          },
+          "person": {
+            "tp": 752,
+            "fn": 2449,
+            "recall": 0.234927
+          },
+          "truck": {
+            "tp": 212,
+            "fn": 556,
+            "recall": 0.276042
+          }
+        }
+      },
+      "parking lot": {
+        "tp": 65,
+        "fn": 160,
+        "recall": 0.288889,
+        "per_class": {
+          "bus": {
+            "tp": 0,
+            "fn": 2,
+            "recall": 0.0
+          },
+          "car": {
+            "tp": 61,
+            "fn": 153,
+            "recall": 0.285047
+          },
+          "motorcycle": {
+            "tp": 0,
+            "fn": 1,
+            "recall": 0.0
+          },
+          "person": {
+            "tp": 4,
+            "fn": 3,
+            "recall": 0.571429
+          },
+          "truck": {
+            "tp": 0,
+            "fn": 1,
+            "recall": 0.0
+          }
+        }
+      },
+      "highway": {
+        "tp": 1474,
+        "fn": 3840,
+        "recall": 0.277381,
+        "per_class": {
+          "bicycle": {
+            "tp": 1,
+            "fn": 6,
+            "recall": 0.142857
+          },
+          "bus": {
+            "tp": 14,
+            "fn": 69,
+            "recall": 0.168675
+          },
+          "car": {
+            "tp": 1383,
+            "fn": 3412,
+            "recall": 0.288425
+          },
+          "motorcycle": {
+            "tp": 1,
+            "fn": 10,
+            "recall": 0.090909
+          },
+          "person": {
+            "tp": 20,
+            "fn": 139,
+            "recall": 0.125786
+          },
+          "truck": {
+            "tp": 55,
+            "fn": 204,
+            "recall": 0.212355
+          }
+        }
+      },
+      "undefined": {
+        "tp": 20,
+        "fn": 47,
+        "recall": 0.298507,
+        "per_class": {
+          "car": {
+            "tp": 12,
+            "fn": 44,
+            "recall": 0.214286
+          },
+          "person": {
+            "tp": 7,
+            "fn": 3,
+            "recall": 0.7
+          },
+          "truck": {
+            "tp": 1,
+            "fn": 0,
+            "recall": 1.0
+          }
+        }
+      },
+      "residential": {
+        "tp": 1485,
+        "fn": 2460,
+        "recall": 0.376426,
+        "per_class": {
+          "bicycle": {
+            "tp": 1,
+            "fn": 17,
+            "recall": 0.055556
+          },
+          "bus": {
+            "tp": 8,
+            "fn": 21,
+            "recall": 0.275862
+          },
+          "car": {
+            "tp": 1406,
+            "fn": 2195,
+            "recall": 0.390447
+          },
+          "motorcycle": {
+            "tp": 3,
+            "fn": 21,
+            "recall": 0.125
+          },
+          "person": {
+            "tp": 45,
+            "fn": 155,
+            "recall": 0.225
+          },
+          "truck": {
+            "tp": 22,
+            "fn": 51,
+            "recall": 0.30137
+          }
+        }
+      },
+      "tunnel": {
+        "tp": 3,
+        "fn": 10,
+        "recall": 0.230769,
+        "per_class": {
+          "car": {
+            "tp": 3,
+            "fn": 10,
+            "recall": 0.230769
+          }
+        }
+      }
+    },
+    "timeofday": {
+      "daytime": {
+        "tp": 7613,
+        "fn": 15602,
+        "recall": 0.327935,
+        "per_class": {
+          "bicycle": {
+            "tp": 24,
+            "fn": 242,
+            "recall": 0.090226
+          },
+          "bus": {
+            "tp": 109,
+            "fn": 259,
+            "recall": 0.296196
+          },
+          "car": {
+            "tp": 6453,
+            "fn": 11797,
+            "recall": 0.353589
+          },
+          "motorcycle": {
+            "tp": 17,
+            "fn": 95,
+            "recall": 0.151786
+          },
+          "person": {
+            "tp": 748,
+            "fn": 2490,
+            "recall": 0.231007
+          },
+          "truck": {
+            "tp": 262,
+            "fn": 719,
+            "recall": 0.267074
+          }
+        }
+      },
+      "dawn/dusk": {
+        "tp": 921,
+        "fn": 2053,
+        "recall": 0.309684,
+        "per_class": {
+          "bicycle": {
+            "tp": 1,
+            "fn": 20,
+            "recall": 0.047619
+          },
+          "bus": {
+            "tp": 12,
+            "fn": 33,
+            "recall": 0.266667
+          },
+          "car": {
+            "tp": 814,
+            "fn": 1695,
+            "recall": 0.324432
+          },
+          "motorcycle": {
+            "tp": 1,
+            "fn": 15,
+            "recall": 0.0625
+          },
+          "person": {
+            "tp": 68,
+            "fn": 207,
+            "recall": 0.247273
+          },
+          "truck": {
+            "tp": 25,
+            "fn": 83,
+            "recall": 0.231481
+          }
+        }
+      },
+      "night": {
+        "tp": 193,
+        "fn": 679,
+        "recall": 0.22133,
+        "per_class": {
+          "bicycle": {
+            "tp": 0,
+            "fn": 2,
+            "recall": 0.0
+          },
+          "bus": {
+            "tp": 0,
+            "fn": 2,
+            "recall": 0.0
+          },
+          "car": {
+            "tp": 178,
+            "fn": 612,
+            "recall": 0.225316
+          },
+          "motorcycle": {
+            "tp": 0,
+            "fn": 1,
+            "recall": 0.0
+          },
+          "person": {
+            "tp": 12,
+            "fn": 52,
+            "recall": 0.1875
+          },
+          "truck": {
+            "tp": 3,
+            "fn": 10,
+            "recall": 0.230769
+          }
+        }
+      },
+      "undefined": {
+        "tp": 3,
+        "fn": 7,
+        "recall": 0.3,
+        "per_class": {
+          "car": {
+            "tp": 3,
+            "fn": 7,
+            "recall": 0.3
+          }
+        }
+      }
+    }
+  }
+}

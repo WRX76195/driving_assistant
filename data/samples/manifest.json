@@ -1,0 +1,44 @@
+[
+  {
+    "filename": "bus.jpg",
+    "sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+    "description": "Przykładowa scena drogowa z autobusem (Ultralytics).",
+    "expected_use": "Weryfikacja CLI, detekcji pojazdów i raportu JSON."
+  },
+  {
+    "filename": "street.jpg",
+    "sha256": "bfbf9c641be2d1429c3004ccf01e6baae97b2a6c736405ff4073b81688046693",
+    "description": "Syntetyczna scena uliczna wygenerowana na potrzeby projektu za pomocą narzędzia generowania obrazów OpenAI (2026-08-16).",
+    "expected_use": "Kontrola detekcji wielu klas, wyboru obiektu głównego i priorytetu."
+  },
+  {
+    "filename": "dark.png",
+    "sha256": "59d77ea96c7003cac69f90e024615584d178033d4e432b520f1cc21f5a8eb4f6",
+    "description": "Syntetyczny ciemny obraz o niskiej jasności.",
+    "expected_use": "Test heurystycznego wskaźnika cech obrazu — oczekiwany niski wynik."
+  },
+  {
+    "filename": "bright.png",
+    "sha256": "aaf1ed5310d3ce182b53490bcd71ae4b7f99e2b20773754280064d1b03894f68",
+    "description": "Syntetyczny jasny obraz o wysokiej jasności.",
+    "expected_use": "Test heurystycznego wskaźnika cech obrazu — skrajna jasność."
+  },
+  {
+    "filename": "blur.png",
+    "sha256": "3a96185662df175d2eb6fdc1e1b3c011a53abb0492ed6e5c7aee0765d663531e",
+    "description": "Syntetyczny rozmyty obraz sceny.",
+    "expected_use": "Test heurystycznego wskaźnika cech obrazu — niska ostrość."
+  },
+  {
+    "filename": "empty_scene.png",
+    "sha256": "9f772ba7d851cba935e481b45a66d38a1fd2626cfd83c8b0d3a07ac0186a8284",
+    "description": "Jednolity obraz bez obiektów drogowych.",
+    "expected_use": "Test komunikatu i priorytetu przy braku detekcji YOLO."
+  },
+  {
+    "filename": "zidane.jpg",
+    "sha256": "356dad2107bb0254e4e4a81bc1d9c7140043e88569d546e5b404b19bffa77d0a",
+    "description": "Obraz demonstracyjny Ultralytics (poza mini zbiorem z punktu 7.4).",
+    "expected_use": "Opcjonalna kontrola detekcji; nie wchodzi do przebiegów §7.4."
+  }
+]

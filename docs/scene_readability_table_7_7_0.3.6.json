@@ -1,0 +1,199 @@
+{
+  "formula_version": "0.3.6",
+  "image": "bus.jpg",
+  "degradation": "Pillow ImageFilter.GaussianBlur(radius=σ); ekspozycja = clip(RGB·k, 0, 255)",
+  "acceptance": {
+    "original_good": true,
+    "sigma30_limited": true,
+    "exposure_x3_limited": true
+  },
+  "rows": [
+    {
+      "wariant": "oryginał (σ = 0)",
+      "brightness": 0.4566,
+      "contrast": 0.2667,
+      "sharpness": 0.0556,
+      "saturation": 0.2811,
+      "edge_density": 0.2656,
+      "clip_hi": 0.0054,
+      "S": 0.9364,
+      "kategoria": "dobry"
+    },
+    {
+      "wariant": "rozmycie σ = 1",
+      "brightness": 0.455,
+      "contrast": 0.2509,
+      "sharpness": 0.0023,
+      "saturation": 0.2661,
+      "edge_density": 0.1282,
+      "clip_hi": 0.0007,
+      "S": 0.7133,
+      "kategoria": "dobry"
+    },
+    {
+      "wariant": "rozmycie σ = 2",
+      "brightness": 0.4566,
+      "contrast": 0.2417,
+      "sharpness": 0.0002,
+      "saturation": 0.2563,
+      "edge_density": 0.0121,
+      "clip_hi": 0.0003,
+      "S": 0.5871,
+      "kategoria": "dobry"
+    },
+    {
+      "wariant": "rozmycie σ = 3",
+      "brightness": 0.4566,
+      "contrast": 0.235,
+      "sharpness": 0.0001,
+      "saturation": 0.2497,
+      "edge_density": 0.004,
+      "clip_hi": 0.0002,
+      "S": 0.5583,
+      "kategoria": "umiarkowany"
+    },
+    {
+      "wariant": "rozmycie σ = 5",
+      "brightness": 0.4566,
+      "contrast": 0.2239,
+      "sharpness": 0.0,
+      "saturation": 0.2378,
+      "edge_density": 0.004,
+      "clip_hi": 0.0,
+      "S": 0.5209,
+      "kategoria": "umiarkowany"
+    },
+    {
+      "wariant": "rozmycie σ = 8",
+      "brightness": 0.4567,
+      "contrast": 0.21,
+      "sharpness": 0.0,
+      "saturation": 0.2227,
+      "edge_density": 0.004,
+      "clip_hi": 0.0,
+      "S": 0.474,
+      "kategoria": "umiarkowany"
+    },
+    {
+      "wariant": "rozmycie σ = 10",
+      "brightness": 0.4567,
+      "contrast": 0.202,
+      "sharpness": 0.0,
+      "saturation": 0.2144,
+      "edge_density": 0.004,
+      "clip_hi": 0.0,
+      "S": 0.4471,
+      "kategoria": "umiarkowany"
+    },
+    {
+      "wariant": "rozmycie σ = 15",
+      "brightness": 0.4568,
+      "contrast": 0.1851,
+      "sharpness": 0.0,
+      "saturation": 0.1985,
+      "edge_density": 0.004,
+      "clip_hi": 0.0,
+      "S": 0.391,
+      "kategoria": "umiarkowany"
+    },
+    {
+      "wariant": "rozmycie σ = 30 (obraz nieczytelny)",
+      "brightness": 0.4569,
+      "contrast": 0.1503,
+      "sharpness": 0.0,
+      "saturation": 0.1708,
+      "edge_density": 0.0041,
+      "clip_hi": 0.0,
+      "S": 0.2771,
+      "kategoria": "ograniczony"
+    },
+    {
+      "wariant": "ekspozycja × 0,20",
+      "brightness": 0.0897,
+      "contrast": 0.0533,
+      "sharpness": 0.0022,
+      "saturation": 0.2869,
+      "edge_density": 0.0988,
+      "clip_hi": 0.0,
+      "S": 0.2077,
+      "kategoria": "ograniczony"
+    },
+    {
+      "wariant": "ekspozycja × 0,35",
+      "brightness": 0.158,
+      "contrast": 0.0933,
+      "sharpness": 0.0068,
+      "saturation": 0.2858,
+      "edge_density": 0.1678,
+      "clip_hi": 0.0,
+      "S": 0.3063,
+      "kategoria": "ograniczony"
+    },
+    {
+      "wariant": "ekspozycja × 0,50",
+      "brightness": 0.2274,
+      "contrast": 0.1334,
+      "sharpness": 0.0139,
+      "saturation": 0.283,
+      "edge_density": 0.2126,
+      "clip_hi": 0.0,
+      "S": 0.4364,
+      "kategoria": "umiarkowany"
+    },
+    {
+      "wariant": "ekspozycja × 0,75",
+      "brightness": 0.3411,
+      "contrast": 0.2,
+      "sharpness": 0.0313,
+      "saturation": 0.2831,
+      "edge_density": 0.2564,
+      "clip_hi": 0.0,
+      "S": 0.7102,
+      "kategoria": "dobry"
+    },
+    {
+      "wariant": "ekspozycja × 1,50",
+      "brightness": 0.6311,
+      "contrast": 0.3309,
+      "sharpness": 0.0835,
+      "saturation": 0.2562,
+      "edge_density": 0.263,
+      "clip_hi": 0.2661,
+      "S": 0.7195,
+      "kategoria": "dobry"
+    },
+    {
+      "wariant": "ekspozycja × 2,20",
+      "brightness": 0.745,
+      "contrast": 0.3219,
+      "sharpness": 0.1005,
+      "saturation": 0.2145,
+      "edge_density": 0.2248,
+      "clip_hi": 0.5094,
+      "S": 0.4674,
+      "kategoria": "umiarkowany"
+    },
+    {
+      "wariant": "ekspozycja × 3,00",
+      "brightness": 0.8102,
+      "contrast": 0.2962,
+      "sharpness": 0.107,
+      "saturation": 0.1933,
+      "edge_density": 0.195,
+      "clip_hi": 0.645,
+      "S": 0.3236,
+      "kategoria": "ograniczony"
+    },
+    {
+      "wariant": "blur.png z data/samples (odniesienie)",
+      "brightness": 0.4556,
+      "contrast": 0.0657,
+      "sharpness": 0.0,
+      "saturation": 0.212,
+      "edge_density": 0.0073,
+      "clip_hi": 0.0,
+      "S": 0.2021,
+      "kategoria": "ograniczony"
+    }
+  ]
+}

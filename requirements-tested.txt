@@ -1,0 +1,12 @@
+# Środowisko użyte do walidacji wersji 0.3.6 na Pythonie 3.12.10.
+# Te same bezpośrednie zależności obowiązywały w przebiegach 0.3.4 i 0.3.5.
+# Plik utrwala bezpośrednie i krytyczne zależności; pip może doinstalować
+# ich zależności przechodnie odpowiednie dla platformy.
+numpy==2.5.1
+pillow==12.3.0
+streamlit==1.59.2
+ultralytics==8.4.102
+torch==2.13.0
+torchvision==0.28.0
+pytest==9.1.1
+ruff==0.15.22

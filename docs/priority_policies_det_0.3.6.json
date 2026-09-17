@@ -1,0 +1,68 @@
+{
+  "app_version": "0.3.6",
+  "source_file": "data/output/bdd_2000_detections.json",
+  "box_source": "detections",
+  "images_total": 2000,
+  "images_empty": 13,
+  "images_with_objects": 1987,
+  "images_with_vru": 1092,
+  "primary_class_counts": {
+    "vru_first": {
+      "bicycle": 1,
+      "bus": 42,
+      "car": 740,
+      "motorcycle": 5,
+      "person": 829,
+      "truck": 370
+    },
+    "area_first": {
+      "bicycle": 3,
+      "bus": 139,
+      "car": 1404,
+      "motorcycle": 9,
+      "person": 81,
+      "truck": 351
+    },
+    "confidence_first": {
+      "bicycle": 2,
+      "bus": 61,
+      "car": 1719,
+      "motorcycle": 2,
+      "person": 82,
+      "truck": 121
+    }
+  },
+  "pairwise_primary_class_disagreement": {
+    "vru_first_vs_area_first": {
+      "count": 1073,
+      "share_of_images_with_objects": 0.54001
+    },
+    "vru_first_vs_confidence_first": {
+      "count": 1128,
+      "share_of_images_with_objects": 0.56769
+    },
+    "area_first_vs_confidence_first": {
+      "count": 530,
+      "share_of_images_with_objects": 0.266734
+    }
+  },
+  "all_three_policies_disagree": {
+    "count": 183,
+    "share_of_images_with_objects": 0.092099
+  },
+  "vru_present_but_primary_is_other_class": {
+    "vru_first": {
+      "count": 257,
+      "share_of_images_with_vru": 0.235348
+    },
+    "area_first": {
+      "count": 999,
+      "share_of_images_with_vru": 0.914835
+    },
+    "confidence_first": {
+      "count": 1006,
+      "share_of_images_with_vru": 0.921245
+    }
+  },
+  "note": "To nie jest kalibracja wag ani ocena odbioru u ludzi. Metryka to wyłącznie zgodność klasy obiektu głównego między politykami."
+}

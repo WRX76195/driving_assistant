@@ -1,0 +1,78 @@
+[
+  {
+    "file": "bus.jpg",
+    "counts": {
+      "bus": 1,
+      "person": 4
+    },
+    "readability": "dobra",
+    "score": 0.936405,
+    "priority": "wysoki",
+    "priority_score": 6.1,
+    "primary": "person",
+    "message": "Wykryto osobę w centralnej części analizowanego obrazu.",
+    "seconds": 4.015
+  },
+  {
+    "file": "street.jpg",
+    "counts": {
+      "bicycle": 1,
+      "bus": 1,
+      "car": 2,
+      "motorcycle": 1,
+      "person": 10,
+      "truck": 1
+    },
+    "readability": "dobra",
+    "score": 0.766095,
+    "priority": "podstawowy",
+    "priority_score": 3.8,
+    "primary": "person",
+    "message": "W analizowanym obrazie wykryto osobę.",
+    "seconds": 0.105
+  },
+  {
+    "file": "dark.png",
+    "counts": {},
+    "readability": "ograniczona",
+    "score": 0.128342,
+    "priority": "brak komunikatu",
+    "priority_score": 0.0,
+    "primary": null,
+    "message": "Nie wykryto obiektów z obsługiwanych klas. Heurystyczny wskaźnik cech obrazu wskazuje poziom ograniczony.",
+    "seconds": 0.078
+  },
+  {
+    "file": "bright.png",
+    "counts": {},
+    "readability": "ograniczona",
+    "score": 0.049378,
+    "priority": "brak komunikatu",
+    "priority_score": 0.0,
+    "primary": null,
+    "message": "Nie wykryto obiektów z obsługiwanych klas. Heurystyczny wskaźnik cech obrazu wskazuje poziom ograniczony.",
+    "seconds": 0.058
+  },
+  {
+    "file": "blur.png",
+    "counts": {},
+    "readability": "ograniczona",
+    "score": 0.202053,
+    "priority": "brak komunikatu",
+    "priority_score": 0.0,
+    "primary": null,
+    "message": "Nie wykryto obiektów z obsługiwanych klas. Heurystyczny wskaźnik cech obrazu wskazuje poziom ograniczony.",
+    "seconds": 0.057
+  },
+  {
+    "file": "empty_scene.png",
+    "counts": {},
+    "readability": "ograniczona",
+    "score": 0.126349,
+    "priority": "brak komunikatu",
+    "priority_score": 0.0,
+    "primary": null,
+    "message": "Nie wykryto obiektów z obsługiwanych klas. Heurystyczny wskaźnik cech obrazu wskazuje poziom ograniczony.",
+    "seconds": 0.057
+  }
+]
