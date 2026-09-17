@@ -59,23 +59,18 @@ class ImageAnalysisPipeline:
         write_json_report: bool = True,
     ) -> tuple[PipelineResult, Path | None]:
         start = time.perf_counter()
-        # 1. Walidacja ścieżki i przygotowanie katalogu wynikowego
         path = validate_image_path(image_path)
         output = Path(output_dir)
         output.mkdir(parents=True, exist_ok=True)
 
-        # 2. Wczytanie obrazu i detekcja obiektów YOLO
         image = load_validated_image(path)
         image_array = np.asarray(image)
         detections = self.detector.detect(
             image_array,
             confidence_threshold=config.object_confidence_threshold,
         )
-        # 3. Heurystyczny wskaźnik cech obrazu
         scene_readability = self.readability_estimator.estimate(image)
-        # 4. Wyznaczenie priorytetu komunikatu
         priority = assess_priority(detections, scene_readability)
-        # 5. Generowanie komunikatu w wybranym trybie
         message = generate_message(
             detections=detections,
             scene_readability=scene_readability,
@@ -83,7 +78,6 @@ class ImageAnalysisPipeline:
             mode=config.communication_mode,
         )
 
-        # 6. Zapis oznaczonego obrazu
         annotated_path = output / f"{safe_stem(path.name)}_oznaczony.jpg"
         save_annotated_image(
             image=image,
@@ -94,7 +88,6 @@ class ImageAnalysisPipeline:
                 f"{scene_readability_level_label(scene_readability.level)}"
             ],
         )
-        # 7. Złożenie wyniku pipeline
         result = PipelineResult(
             source_path=str(path),
             source_type="image",
@@ -110,7 +103,6 @@ class ImageAnalysisPipeline:
             limitations=DEFAULT_LIMITATIONS,
         )
         report_path = None
-        # 8. Opcjonalny zapis raportu JSON
         if write_json_report:
             report_path = output / f"{safe_stem(path.name)}_raport.json"
             write_report(result, report_path)
