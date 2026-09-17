@@ -1,8 +1,5 @@
 # Rejestr testów technicznych
 
-Szablon służy do późniejszego wpisania realnych wyników. Nie wpisuj metryk bez
-rzeczywistego uruchomienia testu.
-
 ## Przebieg ogólny
 
 | ID | Data | Obraz | Konfiguracja | Wynik | Raport | Komentarz |
