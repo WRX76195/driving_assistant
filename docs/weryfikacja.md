@@ -123,8 +123,7 @@ Testy jednostkowe **nie wymagają** tego ZIP — sprawdzają logikę ewaluacji
 na syntetycznych parach. Mini zbiór `data/samples` nadal nie służy
 do metryk jakości modelu.
 
-Opcjonalne skrypty z Tabeli 8.4 pracy (pomiarów nie wykonano; nie są wymagane
-do PE1) uruchamia się na **rozpakowanym** katalogu 2000 par:
+Opcjonalne skrypty w pracy:
 
 ```powershell
 python ablacja_imgsz_bdd.py --pairs-dir <katalog_2000_par> --imgsz 640 960 1280 --output ablacja_imgsz.json
