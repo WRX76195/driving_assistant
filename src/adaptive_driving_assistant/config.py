@@ -17,8 +17,6 @@ DATA_DIR = PROJECT_ROOT / "data"
 INPUT_DIR = DATA_DIR / "input"
 OUTPUT_DIR = DATA_DIR / "output"
 TOOLING_CONFIG_DIR = PROJECT_ROOT / "models"
-# Katalog na lokalne pliki konfiguracyjne narzędzi (Ultralytics/Matplotlib),
-# nie na cache wag YOLO — model leży w katalogu głównym projektu.
 ULTRALYTICS_CONFIG_DIR = TOOLING_CONFIG_DIR
 MATPLOTLIB_CONFIG_DIR = TOOLING_CONFIG_DIR / "matplotlib"
 
