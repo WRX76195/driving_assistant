@@ -1,5 +1,3 @@
-"""Zapisuje Tabelę 7.7b (kalibracja wskaźnika 0.3.6) dla obrazu bus.jpg."""
-
 # ruff: noqa: E402
 
 from __future__ import annotations
